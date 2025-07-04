@@ -5,7 +5,8 @@ setup-containers:
 create-buckets: 
 	docker exec createbucketsbkp python /code/create_buckets.py 
 
-up: setup-containers create-buckets
+up: 
+	setup-containers create-buckets
 
 down:
 	docker compose down
